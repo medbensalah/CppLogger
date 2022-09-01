@@ -35,12 +35,12 @@ Logger* Logger::GetInstance()
 
 void Logger::SetLevel(uint8_t logLevel)
 {
-    m_instance->m_LogLevel = logLevel;
+    GetInstance()->m_LogLevel = logLevel;
 }
 
 void Logger::SetLogLevelColor(uint8_t logLevel, uint8_t r, uint8_t g, uint8_t b)
 {
-    m_instance->m_LogLevelColors[logLevel] = RGB{r, g, b};
+    GetInstance()->m_LogLevelColors[logLevel] = RGB{r, g, b};
 }
 
 void Logger::LogMessage(const char*& message, uint8_t level, const char* file, int line)
@@ -69,6 +69,7 @@ void Logger::LogMessage(const char*& message, uint8_t level, const char* file, i
             levelName = "FATAL";
             break;
         }
+
 
         std::cout << "\033[38;2;" << (int)m_LogLevelColors[level].r << ";" << (int)m_LogLevelColors[level].g << ";" << (int)m_LogLevelColors[level].b << "m";
         std::cout << "[" << levelName << "] : in \"" << file << "\" in line : " << line << " : " << std::endl;

@@ -1,10 +1,14 @@
 ﻿#include "Logger.h"
 #include <iostream>
 
+using namespace MedLogger;
+
 Logger* Logger::m_instance;
 
 Logger::Logger()
 {
+    m_instance = this;
+
     SetLogLevelColor(LOG_LEVEL_DEBUG, 158, 215, 247);
     SetLogLevelColor(LOG_LEVEL_INFO, 222, 222, 222);
     SetLogLevelColor(LOG_LEVEL_WARNING, 245, 239, 135);
@@ -12,26 +16,31 @@ Logger::Logger()
     SetLogLevelColor(LOG_LEVEL_ERROR, 255, 94, 94);
     SetLogLevelColor(LOG_LEVEL_FATAL, 255, 0, 0);
 
-    SetLevel(LOG_LEVEL_All);
+    SetLevel(LOG_LEVEL_ALL);
+}
+
+Logger::~Logger()
+{
+    m_instance = nullptr;
 }
 
 Logger* Logger::GetInstance()
 {
     if (m_instance == nullptr)
     {
-        m_instance = new Logger();
+        new Logger();
     }
     return m_instance;
 }
 
 void Logger::SetLevel(uint8_t logLevel)
 {
-    m_LogLevel = logLevel;
+    m_instance->m_LogLevel = logLevel;
 }
 
 void Logger::SetLogLevelColor(uint8_t logLevel, uint8_t r, uint8_t g, uint8_t b)
 {
-    m_LogLevelColors[logLevel] = RGB{r, g, b};
+    m_instance->m_LogLevelColors[logLevel] = RGB{r, g, b};
 }
 
 void Logger::LogMessage(const char*& message, uint8_t level, const char* file, int line)
@@ -49,6 +58,9 @@ void Logger::LogMessage(const char*& message, uint8_t level, const char* file, i
             break;
         case LOG_LEVEL_WARNING:
             levelName = "WARNING";
+            break;
+        case LOG_LEVEL_SUCCESS:
+            levelName = "SUCCESS";
             break;
         case LOG_LEVEL_ERROR:
             levelName = "ERROR";

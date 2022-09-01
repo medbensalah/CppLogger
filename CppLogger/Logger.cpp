@@ -71,7 +71,7 @@ void Logger::LogMessage(const char*& message, uint8_t level, const char* file, i
         }
 
         std::cout << "\033[38;2;" << (int)m_LogLevelColors[level].r << ";" << (int)m_LogLevelColors[level].g << ";" << (int)m_LogLevelColors[level].b << "m";
-        std::cout << levelName << ": in \"" << file << "\" in line : " << line << " : " << std::endl;
+        std::cout << "[" << levelName << "] : in \"" << file << "\" in line : " << line << " : " << std::endl;
         std::cout << message << "\033[0m" << std::endl;
     }
 }

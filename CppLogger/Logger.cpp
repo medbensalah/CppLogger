@@ -8,7 +8,6 @@ Logger* Logger::m_instance;
 
 Logger::Logger()
 {
-    std::cout << "*" << std::endl;
     m_instance = this;
 
     SetLogLevelColor(LOG_LEVEL_DEBUG, 158, 215, 247);

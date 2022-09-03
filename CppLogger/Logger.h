@@ -1,5 +1,7 @@
 ﻿#pragma once
+#include <chrono>
 #include <cstdint>
+#include <string>
 #include <map>
 
 #define     LOG_LEVEL_NONE      0b0
@@ -15,6 +17,9 @@ namespace MedLogger
 {
 #define     Log(message, logLevel)      Logger::GetInstance()->LogMessage(message, logLevel, __FILE__, __LINE__)
 
+
+    static  auto start = std::chrono::system_clock::now();
+    
     struct RGB
     {
         uint8_t r;
@@ -32,6 +37,8 @@ namespace MedLogger
         static void SetLogLevelColor(uint8_t logLevel, uint8_t r, uint8_t g, uint8_t b);
 
         void LogMessage(const char*& message, uint8_t level, const char* file, int line);
+
+        void LogMessage(const std::string& message, uint8_t level, const char* file, int line);
 
     private:
         Logger();

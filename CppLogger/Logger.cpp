@@ -81,7 +81,7 @@ void Logger::LogMessage(const char*& message, uint8_t level, const char* file, i
             (int)m_LogLevelColors[level].b << "m";
         
         std::cout << "[" << levelName << "] at " << end_time <<
-            " ( " << elapsed_seconds.count() << " s ) : in \"" <<
+            " ( elapsed time " << elapsed_seconds.count() << " s ) : in \"" <<
             file << "\" in line : "
             << line << " : " << std::endl;
         
@@ -127,7 +127,7 @@ void Logger::LogMessage(const std::string& message, uint8_t level, const char* f
             (int)m_LogLevelColors[level].b << "m";
         
         std::cout << "[" << levelName << "] at " << end_time <<
-            " ( " << elapsed_seconds.count() << " s ) : in \"" <<
+            " ( elapsed time " << elapsed_seconds.count() << " s ) : in \"" <<
             file << "\" in line : "
             << line << " : " << std::endl;
         

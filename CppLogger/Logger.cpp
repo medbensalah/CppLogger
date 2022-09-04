@@ -1,11 +1,11 @@
 ﻿#include "Logger.h"
 
 #include <fstream>
+#include <future>
 
 #include "Localtime.h"
 #include <iostream>
 #include <sstream>
-#include <thread>
 
 using namespace MedLogger;
 
@@ -28,7 +28,6 @@ Logger::Logger()
 
 Logger::~Logger()
 {
-    m_thread.join();
     m_instance = nullptr;
 }
 

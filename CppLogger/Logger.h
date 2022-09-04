@@ -4,7 +4,6 @@
 #include <string>
 #include <map>
 #include <queue>
-#include <thread>
 
 #define     LOG_LEVEL_NONE      0b0
 #define     LOG_LEVEL_DEBUG     0b1
@@ -15,7 +14,7 @@
 #define     LOG_LEVEL_FATAL     0b100000
 #define     LOG_LEVEL_ALL       0b111111
 
-#define     LOG_MODE_CONSOLE    0b1
+#define     LOG_MODE_CONSOLE   0b1
 #define     LOG_MODE_FILE       0b10
 #define     LOG_MODE_ALL        0b11
 
@@ -72,8 +71,6 @@ namespace MedLogger
         bool m_isFinished = false;
         
         std::queue<LogData> m_LogsQueue;
-
-        std::thread m_thread;
         
         std::map<uint8_t, RGB> m_LogLevelColors;
 

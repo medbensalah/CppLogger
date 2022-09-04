@@ -1,0 +1,21 @@
+[INFO] at 22:03:55 ( elapsed time 0.0014702 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything to file only
+
+[DEBUG] at 22:03:55 ( elapsed time 0.0018242 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything to file only
+
+[WARNING] at 22:03:55 ( elapsed time 0.0019675 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything to file only
+
+[SUCCESS] at 22:03:55 ( elapsed time 0.0020921 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything to file only
+
+[ERROR] at 22:03:55 ( elapsed time 0.0022057 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 48 : 
+Log everything to file only
+
+[FATAL] at 22:03:55 ( elapsed time 0.002319 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 49 : 
+Log everything to file only
+
+[SUCCESS] at 22:03:55 ( elapsed time 0.0131834 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 54 : 
+Change success log color
+

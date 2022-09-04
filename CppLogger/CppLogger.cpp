@@ -2,7 +2,7 @@
 #include "Logger.h"
 
 int main(int argc, char* argv[])
-{    
+{
     MedLogger::Logger::SetLogMode(LOG_MODE_CONSOLE);
     const char* message = "Logging out of the box console only";
     
@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
     MedLogger::Log(message, LOG_LEVEL_SUCCESS);
     MedLogger::Log(message, LOG_LEVEL_ERROR);
     MedLogger::Log(message, LOG_LEVEL_FATAL);
-
+    
     message = "Logging only info and debug";
     std::cout << std::endl<< message << std::endl;
     MedLogger::Logger::SetLevel(LOG_LEVEL_INFO | LOG_LEVEL_DEBUG);
@@ -53,7 +53,7 @@ int main(int argc, char* argv[])
     MedLogger::Logger::SetLogLevelColor(LOG_LEVEL_SUCCESS, 66, 135, 245);
     MedLogger::Log(message, LOG_LEVEL_SUCCESS);
 
-    
+
     std::cin.get();
     return 0;
 }

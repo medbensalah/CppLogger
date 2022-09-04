@@ -1,0 +1,225 @@
+[INFO] at 22:01:58 ( elapsed time 0.0001011 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 8 : 
+Logging out of the box
+
+[DEBUG] at 22:01:58 ( elapsed time 0.001555 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 9 : 
+Logging out of the box
+
+[WARNING] at 22:01:58 ( elapsed time 0.0019879 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 10 : 
+Logging out of the box
+
+[SUCCESS] at 22:01:58 ( elapsed time 0.0022885 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 11 : 
+Logging out of the box
+
+[ERROR] at 22:01:58 ( elapsed time 0.0025427 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 12 : 
+Logging out of the box
+
+[FATAL] at 22:01:58 ( elapsed time 0.0028047 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 13 : 
+Logging out of the box
+
+[INFO] at 22:01:58 ( elapsed time 0.013384 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 19 : 
+Logging only info and debug
+
+[DEBUG] at 22:01:58 ( elapsed time 0.0137395 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 20 : 
+Logging only info and debug
+
+[INFO] at 22:01:58 ( elapsed time 0.014137 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 42 : 
+Log everything
+
+[DEBUG] at 22:01:58 ( elapsed time 0.0143818 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 43 : 
+Log everything
+
+[WARNING] at 22:01:58 ( elapsed time 0.0145995 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything
+
+[SUCCESS] at 22:01:58 ( elapsed time 0.0148543 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything
+
+[ERROR] at 22:01:58 ( elapsed time 0.0152717 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything
+
+[FATAL] at 22:01:58 ( elapsed time 0.0156116 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything
+
+[SUCCESS] at 22:01:58 ( elapsed time 0.0159097 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 52 : 
+Change success log color
+
+[INFO] at 22:02:04 ( elapsed time 3.66e-05 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 8 : 
+Logging out of the box
+
+[DEBUG] at 22:02:04 ( elapsed time 0.0009845 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 9 : 
+Logging out of the box
+
+[WARNING] at 22:02:04 ( elapsed time 0.001167 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 10 : 
+Logging out of the box
+
+[SUCCESS] at 22:02:04 ( elapsed time 0.0013107 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 11 : 
+Logging out of the box
+
+[ERROR] at 22:02:04 ( elapsed time 0.0015054 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 12 : 
+Logging out of the box
+
+[FATAL] at 22:02:04 ( elapsed time 0.0016761 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 13 : 
+Logging out of the box
+
+[INFO] at 22:02:04 ( elapsed time 0.0018567 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 19 : 
+Logging only info and debug
+
+[DEBUG] at 22:02:04 ( elapsed time 0.0019951 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 20 : 
+Logging only info and debug
+
+[INFO] at 22:02:04 ( elapsed time 0.0022424 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 42 : 
+Log everything
+
+[DEBUG] at 22:02:04 ( elapsed time 0.0023997 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 43 : 
+Log everything
+
+[WARNING] at 22:02:04 ( elapsed time 0.0026474 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything
+
+[SUCCESS] at 22:02:04 ( elapsed time 0.002833 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything
+
+[ERROR] at 22:02:04 ( elapsed time 0.0030782 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything
+
+[FATAL] at 22:02:04 ( elapsed time 0.0032215 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything
+
+[SUCCESS] at 22:02:04 ( elapsed time 0.0034322 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 52 : 
+Change success log color
+
+[INFO] at 22:02:07 ( elapsed time 6.28e-05 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 8 : 
+Logging out of the box
+
+[DEBUG] at 22:02:07 ( elapsed time 0.001548 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 9 : 
+Logging out of the box
+
+[WARNING] at 22:02:07 ( elapsed time 0.0018627 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 10 : 
+Logging out of the box
+
+[SUCCESS] at 22:02:07 ( elapsed time 0.0021843 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 11 : 
+Logging out of the box
+
+[ERROR] at 22:02:07 ( elapsed time 0.0025176 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 12 : 
+Logging out of the box
+
+[FATAL] at 22:02:07 ( elapsed time 0.0028382 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 13 : 
+Logging out of the box
+
+[INFO] at 22:02:07 ( elapsed time 0.0032172 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 19 : 
+Logging only info and debug
+
+[DEBUG] at 22:02:07 ( elapsed time 0.0034428 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 20 : 
+Logging only info and debug
+
+[INFO] at 22:02:07 ( elapsed time 0.0038964 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 42 : 
+Log everything
+
+[DEBUG] at 22:02:07 ( elapsed time 0.0041918 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 43 : 
+Log everything
+
+[WARNING] at 22:02:07 ( elapsed time 0.0044732 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything
+
+[SUCCESS] at 22:02:07 ( elapsed time 0.0046667 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything
+
+[ERROR] at 22:02:07 ( elapsed time 0.0050422 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything
+
+[FATAL] at 22:02:07 ( elapsed time 0.0052975 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything
+
+[SUCCESS] at 22:02:07 ( elapsed time 0.0056513 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 52 : 
+Change success log color
+
+[INFO] at 22:02:10 ( elapsed time 4.57e-05 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 8 : 
+Logging out of the box
+
+[DEBUG] at 22:02:10 ( elapsed time 0.0016147 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 9 : 
+Logging out of the box
+
+[WARNING] at 22:02:10 ( elapsed time 0.0020346 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 10 : 
+Logging out of the box
+
+[SUCCESS] at 22:02:10 ( elapsed time 0.0022944 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 11 : 
+Logging out of the box
+
+[ERROR] at 22:02:10 ( elapsed time 0.0025413 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 12 : 
+Logging out of the box
+
+[FATAL] at 22:02:10 ( elapsed time 0.002904 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 13 : 
+Logging out of the box
+
+[INFO] at 22:02:10 ( elapsed time 0.0032682 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 19 : 
+Logging only info and debug
+
+[DEBUG] at 22:02:10 ( elapsed time 0.0035498 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 20 : 
+Logging only info and debug
+
+[INFO] at 22:02:10 ( elapsed time 0.0044161 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 42 : 
+Log everything
+
+[DEBUG] at 22:02:10 ( elapsed time 0.0049338 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 43 : 
+Log everything
+
+[WARNING] at 22:02:10 ( elapsed time 0.0054091 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything
+
+[SUCCESS] at 22:02:10 ( elapsed time 0.0057089 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything
+
+[ERROR] at 22:02:10 ( elapsed time 0.0064927 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything
+
+[FATAL] at 22:02:10 ( elapsed time 0.0072393 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything
+
+[SUCCESS] at 22:02:10 ( elapsed time 0.0076841 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 52 : 
+Change success log color
+
+[INFO] at 22:02:14 ( elapsed time 4.77e-05 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 8 : 
+Logging out of the box
+
+[DEBUG] at 22:02:14 ( elapsed time 0.0011142 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 9 : 
+Logging out of the box
+
+[WARNING] at 22:02:14 ( elapsed time 0.0013907 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 10 : 
+Logging out of the box
+
+[SUCCESS] at 22:02:14 ( elapsed time 0.0016748 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 11 : 
+Logging out of the box
+
+[ERROR] at 22:02:14 ( elapsed time 0.0019078 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 12 : 
+Logging out of the box
+
+[FATAL] at 22:02:14 ( elapsed time 0.0021989 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 13 : 
+Logging out of the box
+
+[INFO] at 22:02:14 ( elapsed time 0.0024171 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 19 : 
+Logging only info and debug
+
+[DEBUG] at 22:02:14 ( elapsed time 0.0025537 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 20 : 
+Logging only info and debug
+
+[INFO] at 22:02:14 ( elapsed time 0.0027942 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 42 : 
+Log everything
+
+[DEBUG] at 22:02:14 ( elapsed time 0.002929 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 43 : 
+Log everything
+
+[WARNING] at 22:02:14 ( elapsed time 0.0030555 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 44 : 
+Log everything
+
+[SUCCESS] at 22:02:14 ( elapsed time 0.0031813 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 45 : 
+Log everything
+
+[ERROR] at 22:02:14 ( elapsed time 0.0033841 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 46 : 
+Log everything
+
+[FATAL] at 22:02:14 ( elapsed time 0.0035225 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 47 : 
+Log everything
+
+[SUCCESS] at 22:02:14 ( elapsed time 0.0037231 s ) : in "D:\dev\CppLogger\CppLogger\CppLogger.cpp" in line : 52 : 
+Change success log color
+

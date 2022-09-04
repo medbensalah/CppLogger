@@ -15,7 +15,8 @@
 
 namespace MedLogger
 {
-#define     Log(message, logLevel)      Logger::GetInstance()->LogMessage(message, logLevel, __FILE__, __LINE__)
+#define     Log(message, logLevel)      Logger::RequestLog(message, logLevel, __FILE__, __LINE__)
+
 
 
     static  auto start = std::chrono::system_clock::now();
@@ -26,7 +27,7 @@ namespace MedLogger
         uint8_t g;
         uint8_t b;
     };
-
+    
     class Logger
     {
     public:
@@ -36,9 +37,13 @@ namespace MedLogger
 
         static void SetLogLevelColor(uint8_t logLevel, uint8_t r, uint8_t g, uint8_t b);
 
-        void LogMessage(const char*& message, uint8_t level, const char* file, int line);
+        static void RequestLog(const std::string& message, uint8_t logLevel, const std::string& file, int line);
 
-        void LogMessage(const std::string& message, uint8_t level, const char* file, int line);
+        static void SetMultithreading(bool multithreading);
+        
+        void CreateLogThread(const std::string& message, uint8_t logLevel, const std::string& file, int line);
+
+        void LogMessage(const std::string& message, uint8_t level, const std::string& file, int line);
 
     private:
         Logger();
@@ -46,7 +51,8 @@ namespace MedLogger
         ~Logger();        
         
         static Logger* m_instance;
-
+        static bool m_Multithreading;
+        
         std::map<uint8_t, RGB> m_LogLevelColors;
 
         uint8_t m_LogLevel;

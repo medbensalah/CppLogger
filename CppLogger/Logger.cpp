@@ -1,10 +1,12 @@
 ﻿#include "Logger.h"
 #include "Localtime.h"
 #include <iostream>
+#include <thread>
 
 using namespace MedLogger;
 
 Logger* Logger::m_instance;
+bool Logger::m_Multithreading = true;
 
 Logger::Logger()
 {
@@ -44,52 +46,33 @@ void Logger::SetLogLevelColor(uint8_t logLevel, uint8_t r, uint8_t g, uint8_t b)
     GetInstance()->m_LogLevelColors[logLevel] = RGB{r, g, b};
 }
 
-void Logger::LogMessage(const char*& message, uint8_t level, const char* file, int line)
+void Logger::RequestLog(const std::string& message, uint8_t logLevel, const std::string& file, int line)
 {
-    if (level & m_LogLevel)
+    if (m_Multithreading)
     {
-        const char* levelName = "";
-        switch (level)
-        {
-        case LOG_LEVEL_DEBUG:
-            levelName = "DEBUG";
-            break;
-        case LOG_LEVEL_INFO:
-            levelName = "INFO";
-            break;
-        case LOG_LEVEL_WARNING:
-            levelName = "WARNING";
-            break;
-        case LOG_LEVEL_SUCCESS:
-            levelName = "SUCCESS";
-            break;
-        case LOG_LEVEL_ERROR:
-            levelName = "ERROR";
-            break;
-        case LOG_LEVEL_FATAL:
-            levelName = "FATAL";
-            break;
-        }
-     
-        auto end = std::chrono::system_clock::now();
-        std::chrono::duration<double> elapsed_seconds = end - start;
-        std::string end_time = time_stamp("%T");
-        
-        std::cout << "\033[38;2;" <<
-            (int)m_LogLevelColors[level].r << ";" <<
-            (int)m_LogLevelColors[level].g << ";" <<
-            (int)m_LogLevelColors[level].b << "m";
-        
-        std::cout << "[" << levelName << "] at " << end_time <<
-            " ( elapsed time " << elapsed_seconds.count() << " s ) : in \"" <<
-            file << "\" in line : "
-            << line << " : " << std::endl;
-        
-        std::cout << message << "\033[0m" << std::endl;
+        GetInstance()->CreateLogThread(message, logLevel, file, line);
+    }
+    else
+    {
+        GetInstance()->LogMessage(message, logLevel, file, line);
     }
 }
 
-void Logger::LogMessage(const std::string& message, uint8_t level, const char* file, int line)
+void Logger::SetMultithreading(bool multithreading)
+{
+    m_Multithreading = multithreading;
+}
+
+void Logger::CreateLogThread(const std::string& message, uint8_t level, const std::string& file, int line)
+{
+    if (level & m_LogLevel)
+    {
+        std::thread t = std::thread(&Logger::LogMessage, this, std::ref(message), level, std::ref(file), line);
+        t.join();
+    }
+}
+
+void Logger::LogMessage(const std::string& message, uint8_t level, const std::string& file, int line)
 {
     if (level & m_LogLevel)
     {
@@ -115,22 +98,22 @@ void Logger::LogMessage(const std::string& message, uint8_t level, const char* f
             levelName = "FATAL";
             break;
         }
-        
-        
+
+
         auto end = std::chrono::system_clock::now();
         std::chrono::duration<double> elapsed_seconds = end - start;
         std::string end_time = time_stamp("%T");
-        
+
         std::cout << "\033[38;2;" <<
             (int)m_LogLevelColors[level].r << ";" <<
             (int)m_LogLevelColors[level].g << ";" <<
             (int)m_LogLevelColors[level].b << "m";
-        
+
         std::cout << "[" << levelName << "] at " << end_time <<
             " ( elapsed time " << elapsed_seconds.count() << " s ) : in \"" <<
             file << "\" in line : "
             << line << " : " << std::endl;
-        
+
         std::cout << message << "\033[0m" << std::endl;
     }
 }

@@ -3,8 +3,8 @@
 
 int main(int argc, char* argv[])
 {
+    MedLogger::Logger::SetMultithreading(true);
     const char* message = "Logging out of the box";
-
     
     MedLogger::Log(message, LOG_LEVEL_INFO);
     MedLogger::Log(message, LOG_LEVEL_DEBUG);
@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
     message = "Change success log color";
     std::cout << std::endl<< message << std::endl;
     MedLogger::Logger::SetLogLevelColor(LOG_LEVEL_SUCCESS, 66, 135, 245);
-    MedLogger::Log(message, LOG_LEVEL_SUCCESS);
+    MedLogger::Log(message, LOG_LEVEL_SUCCESS, false);
 
 
     std::cin.get();
